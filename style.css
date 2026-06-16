@@ -1,0 +1,148 @@
+/* Tipografia moderna */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header com gradiente e botão */
+header {
+    background: linear-gradient(135deg, #4CAF50, #2e7d32);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header .btn {
+    background-color: white;
+    color: #2e7d32;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+header .btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Navbar */
+nav {
+    background-color: #2e7d32;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 15px 0;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a5d6a7;
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h2 {
+    color: #2e7d32;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+/* Cards de tecnologias */
+.tech-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+/* Galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .tech-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+}
